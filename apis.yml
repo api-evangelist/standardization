@@ -1,15 +1,11 @@
 name: Standardization
-description: The process of implementing and developing technical standards based
-  on the consensus of different parties, including firms, users, interest groups,
-  standards organizations, and governments, to establish uniform engineering or technical
-  criteria, methods, processes, and practices. Proper implementation reduces legal
-  and operational risk while supporting audit readiness.
+description: The process of implementing and developing technical standards based on the consensus of different parties, including firms, users, interest groups, standards organizations, and governments, to establish uniform engineering or technical criteria, methods, processes, and practices. Proper implementation reduces legal and operational risk while supporting audit readiness.
 url: https://en.wikipedia.org/wiki/Standardization
 tags:
-- Process Improvement
-- Quality Management
-- Best Practices
-- Governance
+  - Best Practices
+  - Governance
+  - Process Improvement
+  - Quality Management
 created: '2025'
 modified: '2026-03-16'
 apis: []
