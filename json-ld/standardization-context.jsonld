@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "std": "https://api-evangelist.com/vocab/standardization/",
+
+    "TechnicalStandard": "std:TechnicalStandard",
+    "StandardsBody": "schema:Organization",
+    "Specification": "std:Specification",
+    "Protocol": "std:Protocol",
+    "ConformanceLevel": "std:ConformanceLevel",
+
+    "id": "@id",
+    "title": "schema:name",
+    "abbreviation": "schema:alternateName",
+    "description": "schema:description",
+    "version": "schema:version",
+    "status": "schema:status",
+    "type": "schema:additionalType",
+    "domain": "schema:category",
+    "url": "schema:url",
+    "specification_url": {
+      "@id": "dcterms:hasFormat",
+      "@type": "@id"
+    },
+    "github_url": {
+      "@id": "schema:codeRepository",
+      "@type": "@id"
+    },
+    "published_date": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:date"
+    },
+    "publisher": {
+      "@id": "schema:publisher",
+      "@type": "schema:Organization"
+    },
+    "supersedes": {
+      "@id": "dcterms:replaces",
+      "@type": "@id"
+    },
+    "related_standards": {
+      "@id": "dcterms:relation",
+      "@container": "@set"
+    },
+    "known_implementations": {
+      "@id": "schema:softwareHelp",
+      "@container": "@set"
+    },
+    "conformance_levels": {
+      "@id": "std:conformanceLevel",
+      "@container": "@set"
+    },
+    "previous_versions": {
+      "@id": "prov:wasRevisionOf",
+      "@container": "@set"
+    },
+    "tags": {
+      "@id": "schema:keywords",
+      "@container": "@set"
+    }
+  }
+}

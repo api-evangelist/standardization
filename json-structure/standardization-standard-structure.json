@@ -1,0 +1,37 @@
+{
+  "name": "Technical Standard Structure",
+  "description": "Structural documentation for a technical standard record",
+  "properties": {
+    "id": { "type": "string", "description": "Canonical standard identifier (e.g., ISO-9001, RFC-7519)" },
+    "title": { "type": "string", "description": "Official standard name" },
+    "abbreviation": { "type": "string", "description": "Common abbreviation (e.g., OAS, JWT, TLS)" },
+    "version": { "type": "string", "description": "Current version" },
+    "status": { "type": "string", "description": "Lifecycle status: draft, proposed, published, deprecated, withdrawn, superseded" },
+    "type": { "type": "string", "description": "Standard type: specification, protocol, schema, guideline, framework, profile, extension" },
+    "domain": { "type": "string", "description": "Technical domain (e.g., API Design, Security, Data Format)" },
+    "description": { "type": "string", "description": "What the standard defines" },
+    "publisher": {
+      "type": "object",
+      "description": "Standards Development Organization",
+      "properties": {
+        "name": { "type": "string" },
+        "abbreviation": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "published_date": { "type": "string", "description": "Publication date (ISO 8601)" },
+    "url": { "type": "string", "description": "Canonical standard URL" },
+    "specification_url": { "type": "string", "description": "Direct link to spec text" },
+    "github_url": { "type": "string", "description": "GitHub repository (if open)" },
+    "related_standards": { "type": "array", "description": "Related standards by ID" },
+    "known_implementations": {
+      "type": "array",
+      "items": {
+        "name": { "type": "string" },
+        "language": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "tags": { "type": "array", "description": "Classification tags" }
+  }
+}

@@ -1,0 +1,137 @@
+name: Standardization Vocabulary
+description: >-
+  Vocabulary and taxonomy for technical standardization covering standards bodies,
+  specification types, conformance requirements, governance processes, and the API
+  standards landscape.
+created: '2026-05-02'
+modified: '2026-05-02'
+terms:
+  - term: Standard
+    definition: >-
+      A document established by consensus of relevant parties and approved by a
+      recognized body that provides rules, guidelines, or characteristics for
+      activities or their results, aimed at achieving optimum order in a given context.
+    tags: [Core Concept, Governance]
+
+  - term: Standards Development Organization (SDO)
+    definition: >-
+      An organization accredited to develop, publish, and maintain technical
+      standards. Major SDOs include ISO, IEC, IEEE, IETF, W3C, OASIS, and
+      national bodies like ANSI (US), BSI (UK), DIN (Germany), and AFNOR (France).
+    tags: [Governance, Organizations]
+
+  - term: Specification
+    definition: >-
+      A detailed technical description of requirements, design, behavior, or
+      interoperability for a system, product, or process. In APIs, specifications
+      like OpenAPI, AsyncAPI, and JSON Schema define machine-readable contracts.
+    tags: [API Design, Documentation]
+
+  - term: Interoperability
+    definition: >-
+      The ability of systems, products, or components from different vendors to
+      work together without special configuration. Technical standards enable
+      interoperability by defining common data formats, protocols, and interfaces.
+    tags: [Core Concept, Integration]
+
+  - term: Conformance
+    definition: >-
+      The degree to which a product, system, or process satisfies the requirements
+      defined in a standard. Conformance may be validated through self-certification,
+      third-party testing, or certification programs.
+    tags: [Compliance, Quality]
+
+  - term: RFC (Request for Comments)
+    definition: >-
+      A publication from the IETF (Internet Engineering Task Force) that documents
+      internet standards, protocols, and best practices. Foundational API standards
+      including HTTP (RFC 9110), OAuth 2.0 (RFC 6749), JWT (RFC 7519), and JSON
+      (RFC 8259) are published as RFCs.
+    tags: [IETF, Internet Standards]
+
+  - term: OpenAPI Specification (OAS)
+    definition: >-
+      A language-agnostic standard for describing RESTful APIs maintained by the
+      OpenAPI Initiative (OAI) under the Linux Foundation. OAS enables machine-
+      readable API definitions that power documentation, code generation, testing,
+      and validation tooling. Current version is 3.1.0.
+    tags: [API Design, REST, Specification]
+
+  - term: AsyncAPI
+    definition: >-
+      An open standard for defining event-driven and messaging APIs, analogous to
+      OpenAPI for asynchronous protocols. AsyncAPI supports Kafka, AMQP, MQTT,
+      WebSockets, and other messaging systems. Maintained by the AsyncAPI Initiative.
+    tags: [API Design, Events, Specification]
+
+  - term: JSON Schema
+    definition: >-
+      A vocabulary for annotating and validating JSON documents. JSON Schema defines
+      the structure, constraints, and documentation for JSON data. OAS 3.1 adopted
+      full JSON Schema 2020-12 alignment.
+    tags: [JSON, Data Validation, Specification]
+
+  - term: OAuth 2.0
+    definition: >-
+      An authorization framework (RFC 6749) that enables third-party applications
+      to obtain limited access to user accounts. The dominant authorization standard
+      for REST APIs, extended by OpenID Connect for authentication.
+    tags: [Security, Authorization, IETF]
+
+  - term: OpenID Connect (OIDC)
+    definition: >-
+      An identity layer built on top of OAuth 2.0 that enables clients to verify
+      the identity of end users and obtain basic profile information. The de facto
+      standard for API authentication in modern applications.
+    tags: [Security, Authentication, Identity]
+
+  - term: Model Context Protocol (MCP)
+    definition: >-
+      An open protocol introduced by Anthropic in 2024 for enabling AI agents to
+      connect with external tools, data sources, and APIs. MCP standardizes how
+      language models discover and invoke capabilities, emerging as a new API
+      integration standard for the AI era.
+    tags: [AI Agents, Protocol, Emerging Standards]
+
+  - term: RFC Keywords
+    definition: >-
+      Normative requirement levels defined in RFC 2119 and used across IETF and
+      many other standards: MUST (absolute requirement), SHOULD (strong recommendation),
+      MAY (optional feature), MUST NOT (absolute prohibition), SHOULD NOT (not recommended).
+    tags: [Requirements, Conformance, IETF]
+
+  - term: Semantic Versioning (SemVer)
+    definition: >-
+      A versioning convention (MAJOR.MINOR.PATCH) where MAJOR indicates breaking
+      changes, MINOR indicates backwards-compatible additions, and PATCH indicates
+      backwards-compatible bug fixes. Widely adopted for APIs and software components.
+    tags: [Versioning, API Management]
+
+  - term: W3C (World Wide Web Consortium)
+    definition: >-
+      International standards organization led by Tim Berners-Lee that develops
+      web standards including HTML, CSS, XML, RDF, JSON-LD, and WebAssembly.
+      W3C standards are foundational to web API interoperability.
+    tags: [Standards Body, Web]
+
+  - term: ISO (International Organization for Standardization)
+    definition: >-
+      An international SDO composed of national standards bodies from 165 countries.
+      Publishes over 24,000 standards covering quality management (ISO 9001),
+      information security (ISO 27001), and many other domains relevant to API governance.
+    tags: [Standards Body, International, Quality]
+
+  - term: Technical Committee
+    definition: >-
+      A working group within an SDO responsible for developing and maintaining
+      standards within a specific technical domain. Members include industry
+      representatives, academics, government agencies, and individual experts.
+    tags: [Governance, Process]
+
+  - term: Normative vs. Informative
+    definition: >-
+      A distinction in standards documents between normative text (defines binding
+      requirements that must be met for conformance) and informative text (provides
+      guidance, examples, or explanations that are not requirements). Usually
+      distinguished by section labeling or document structure.
+    tags: [Documentation, Conformance]

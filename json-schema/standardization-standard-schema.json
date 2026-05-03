@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/standardization/refs/heads/main/json-schema/standardization-standard-schema.json",
+  "title": "Technical Standard",
+  "description": "A technical standard produced by a standards development organization (SDO), defining interoperable specifications for products, services, or processes.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Canonical identifier for the standard (e.g., ISO-9001, RFC-7519, OAS-3.1.0)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Official name of the standard"
+    },
+    "abbreviation": {
+      "type": "string",
+      "description": "Common abbreviation (e.g., OAS, JWT, TLS)"
+    },
+    "version": {
+      "type": "string",
+      "description": "Current version or edition of the standard"
+    },
+    "status": {
+      "type": "string",
+      "description": "Publication status of the standard",
+      "enum": ["draft", "proposed", "published", "deprecated", "withdrawn", "superseded"]
+    },
+    "type": {
+      "type": "string",
+      "description": "Type of standard",
+      "enum": ["specification", "protocol", "schema", "guideline", "framework", "profile", "extension"]
+    },
+    "domain": {
+      "type": "string",
+      "description": "Technical domain (e.g., API Design, Security, Data Format, Networking)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of what the standard defines and why it exists"
+    },
+    "publisher": {
+      "type": "object",
+      "description": "Standards Development Organization (SDO) that publishes this standard",
+      "properties": {
+        "name": { "type": "string", "description": "Organization name" },
+        "abbreviation": { "type": "string", "description": "SDO abbreviation (e.g., ISO, IEEE, IETF)" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["name"]
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of current version publication"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical URL for the standard document"
+    },
+    "specification_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Direct link to the specification text"
+    },
+    "github_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "GitHub repository for the standard (if open)"
+    },
+    "previous_versions": {
+      "type": "array",
+      "description": "List of previous versions",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "date": { "type": "string", "format": "date" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "supersedes": {
+      "type": "string",
+      "description": "Standard that this one replaces (e.g., OAS 3.1 supersedes OAS 3.0)"
+    },
+    "related_standards": {
+      "type": "array",
+      "description": "Related or complementary standards",
+      "items": { "type": "string" }
+    },
+    "known_implementations": {
+      "type": "array",
+      "description": "Known software implementations of this standard",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "language": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "conformance_levels": {
+      "type": "array",
+      "description": "Defined conformance or compliance levels (e.g., MUST, SHOULD, MAY)",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Classification tags",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["id", "title", "status", "publisher"]
+}
