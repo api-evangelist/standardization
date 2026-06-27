@@ -27,13 +27,13 @@ common:
   - url: https://www.iso.org/
     type: Portal
   - url: https://www.openapis.org/
-    type: Standard
+    type: Standards
   - url: https://www.asyncapi.com/
-    type: Standard
+    type: Standards
   - url: https://json-schema.org/
-    type: Standard
+    type: Standards
   - url: https://oauth.net/2/
-    type: Standard
+    type: Standards
   - url: https://www.w3.org/
     type: Portal
   - url: https://www.ietf.org/
