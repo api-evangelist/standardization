@@ -22,6 +22,8 @@ tags:
 created: '2025'
 modified: '2026-05-02'
 common:
+  - type: DomainSecurity
+    url: security/standardization-domain-security.yml
   - url: https://en.wikipedia.org/wiki/Standardization
     type: Documentation
   - url: https://www.iso.org/
