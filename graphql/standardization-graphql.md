@@ -1,1 +1,0 @@
-# Standardization GraphQL API
